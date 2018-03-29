@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    build: "docker/db"
+    restart: always
+    environment:
+      - "MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}"
+      - "MYSQL_USER=${DB_WRITE_USER_NAME}"
+      - "MYSQL_READ_ONLY_USER=${DB_READ_USER_NAME}"
+      - "MYSQL_PASSWORD=${DB_WRITE_USER_PASSWORD}"
+    ports:
+      - "${DB_PORT}:3306"

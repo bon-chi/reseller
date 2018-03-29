@@ -1,0 +1,19 @@
+[package]
+name = "reseller"
+version = "0.1.0"
+authors = ["Koji Ota <afterjnih@gmail.com>"]
+
+[dependencies]
+diesel = { version = "1.1.0", features = ["mysql", "chrono"] }
+dotenv = "0.10"
+dotenv_codegen = "0.11.0"
+chrono = "0.4"
+gotham = "0.2.0"
+gotham_derive = "0.2.0"
+hyper = "0.11"
+futures = "0.1"
+mime = "0.3"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+bcrypt = "0.2"
